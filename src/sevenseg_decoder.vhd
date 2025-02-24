@@ -40,21 +40,21 @@ architecture Behavioral of sevenseg_decoder is
 
 begin
     with i_Hex select
-        o_seg_n <=  x"40" when x"0",
-                    x"79" when x"1",
-                    x"24" when x"2",
-                    x"30" when x"3",
-                    x"19" when x"4",
-                    x"12" when x"5",
-                    x"02" when x"6",
-                    x"78" when x"7",
-                    x"00" when x"8",
-                    x"18" when x"9",
-                    x"08" when x"A",
-                    x"03" when x"B",
-                    x"27" when x"C",
-                    x"21" when x"D",
-                    x"06" when x"E",
-                    x"0E" when x"F";
+        o_seg_n <=  "1000000" when x"0",
+                    "1111001" when x"1",
+                    "0100100" when x"2",
+                    "0110000" when x"3",
+                    "0011001" when x"4",
+                    "0010010" when x"5",
+                    "0000010" when x"6",
+                    "1111000" when x"7",
+                    "0000000" when x"8",
+                    "0011000" when x"9",
+                    "0001000" when x"A",
+                    "0000011" when x"B",
+                    "0100111" when x"C",
+                    "0100001" when x"D",
+                    "0000110" when x"E",
+                    "0001110" when x"F";
 
 end Behavioral;
