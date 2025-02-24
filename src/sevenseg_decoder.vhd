@@ -55,6 +55,7 @@ begin
                     "0100111" when x"C",
                     "0100001" when x"D",
                     "0000110" when x"E",
-                    "0001110" when x"F";
+                    "0001110" when x"F",
+                    "1111111" when others;
 
 end Behavioral;
