@@ -19,7 +19,8 @@
 
 # don't ignore bitstream
 !*.runs/
-!*.runs/*.bit
+!*.runs/impl_1/
+!*.runs/impl_1/*.bit
 
 # don't ignore markdown
 !*.md
